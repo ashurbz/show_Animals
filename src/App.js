@@ -23,9 +23,11 @@ function App() {
       >
         Show Animals
       </button>
-      {animals.map((animal, index) => {
-        return <Animals type={animal} key={index} />;
-      })}
+      <div>
+        {animals.map((animal, index) => {
+          return <Animals type={animal} key={index} />;
+        })}
+      </div>
     </div>
   );
 }
